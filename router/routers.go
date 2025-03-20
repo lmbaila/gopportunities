@@ -15,9 +15,7 @@ func initializeRoutes(router *gin.Engine) {
 			})
 		})
 		v1.POST("/opening", func(ctx *gin.Context) {
-			ctx.JSON(http.StatusOK, gin.H{
-				"massage": "GET Opening",
-			})
+
 		})
 		v1.DELETE("/opening", func(ctx *gin.Context) {
 			ctx.JSON(http.StatusOK, gin.H{
